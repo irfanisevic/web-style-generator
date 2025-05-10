@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>style customizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>style customizer</h2>
+
+    <div id="controls">
+      <label>
+        background-color:
+        <input type="color" id="bgColorPicker" />
+      </label>
+
+      <label>
+        text color:
+        <input type="color" id="textColorPicker" />
+      </label>
+
+      <label>
+        font-size:
+        <input type="range" id="fontSizeSlider" min="12" max="48" value="16" />
+      </label>
+
+      <label>
+        font family:
+        <select id="FontFamilySelector">
+          <option value="Arial">Arial</option>
+          <option value="Courier New">Courier New</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="Verdana">Verdana</option>
+        </select>
+      </label>
+
+      <label>
+        <input type="checkbox" id="darkModeToggle" />
+        enable dark mode
+      </label>
+    </div>
+
+    <div id="output">ini adalah teks yang akan berubah gaya</div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
